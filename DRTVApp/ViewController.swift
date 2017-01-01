@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 import GoogleCast
 import ObjectMapper
 import Alamofire
@@ -49,7 +50,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let programCard = self._programCards[indexPath.row]
+        Alamofire.request(programCard.videoURL!).validate().responseObject { (response: DataResponse<Manifest>) in
+            switch response.result {
+            case .success(let value):
+                if let link = value.links?.first(where: {$0.target == ManifestTarget.HLS})?.uri {
+                    let player = AVPlayer(url: link)
+                    let controller = AVPlayerViewController()
+                    controller.player = player
+                    self.present(controller, animated: true, completion: {
+                        controller.player!.play()
+                    })
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

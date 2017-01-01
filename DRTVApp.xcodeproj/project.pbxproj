@@ -10,6 +10,7 @@
 		4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04C9781E1593220009A2E2 /* ProgramCell.swift */; };
 		4C07780B1E156DB900F8265B /* ProgramCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780A1E156DB900F8265B /* ProgramCard.swift */; };
 		4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780C1E15834600F8265B /* MostViewedEntity.swift */; };
+		4C3BBC791E19592D00A826C7 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BBC781E19592D00A826C7 /* Manifest.swift */; };
 		4C44E8661E14F77B006237F3 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8651E14F77B006237F3 /* Program.swift */; };
 		4C44E8681E14F8E9006237F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8671E14F8E9006237F3 /* Constants.swift */; };
 		4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		4C04C9781E1593220009A2E2 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
 		4C07780A1E156DB900F8265B /* ProgramCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCard.swift; sourceTree = "<group>"; };
 		4C07780C1E15834600F8265B /* MostViewedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostViewedEntity.swift; sourceTree = "<group>"; };
+		4C3BBC781E19592D00A826C7 /* Manifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
 		4C44E8651E14F77B006237F3 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		4C44E8671E14F8E9006237F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4C63E9D71E145BAF00A8C05E /* DRTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				4C44E8651E14F77B006237F3 /* Program.swift */,
 				4C07780A1E156DB900F8265B /* ProgramCard.swift */,
 				4C07780C1E15834600F8265B /* MostViewedEntity.swift */,
+				4C3BBC781E19592D00A826C7 /* Manifest.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */,
 				4C44E8661E14F77B006237F3 /* Program.swift in Sources */,
 				4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */,
+				4C3BBC791E19592D00A826C7 /* Manifest.swift in Sources */,
 				4C63E9E31E145BAF00A8C05E /* DRTVApp.xcdatamodeld in Sources */,
 				4C63E9DD1E145BAF00A8C05E /* ViewController.swift in Sources */,
 				4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */,
