@@ -1,0 +1,6 @@
+framework module Pods_DRTVApp {
+  umbrella header "Pods-DRTVApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

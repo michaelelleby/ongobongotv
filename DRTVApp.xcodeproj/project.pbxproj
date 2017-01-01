@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04C9781E1593220009A2E2 /* ProgramCell.swift */; };
+		4C07780B1E156DB900F8265B /* ProgramCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780A1E156DB900F8265B /* ProgramCard.swift */; };
+		4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780C1E15834600F8265B /* MostViewedEntity.swift */; };
+		4C44E8661E14F77B006237F3 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8651E14F77B006237F3 /* Program.swift */; };
+		4C44E8681E14F8E9006237F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8671E14F8E9006237F3 /* Constants.swift */; };
+		4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */; };
+		4C63E9DD1E145BAF00A8C05E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9DC1E145BAF00A8C05E /* ViewController.swift */; };
+		4C63E9E01E145BAF00A8C05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9DE1E145BAF00A8C05E /* Main.storyboard */; };
+		4C63E9E31E145BAF00A8C05E /* DRTVApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */; };
+		4C63E9E51E145BAF00A8C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9E41E145BAF00A8C05E /* Assets.xcassets */; };
+		4C63E9E81E145BAF00A8C05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9E61E145BAF00A8C05E /* LaunchScreen.storyboard */; };
+		F2E6C4E0654EB7D9DA98C8C2 /* Pods_DRTVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992DF86A9F8971CD2E632D52 /* Pods_DRTVApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		278AFF6D1D1A7C22646C3010 /* Pods-DRTVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRTVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRTVApp/Pods-DRTVApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4C04C9781E1593220009A2E2 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
+		4C07780A1E156DB900F8265B /* ProgramCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCard.swift; sourceTree = "<group>"; };
+		4C07780C1E15834600F8265B /* MostViewedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostViewedEntity.swift; sourceTree = "<group>"; };
+		4C44E8651E14F77B006237F3 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		4C44E8671E14F8E9006237F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C63E9D71E145BAF00A8C05E /* DRTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C63E9DC1E145BAF00A8C05E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C63E9DF1E145BAF00A8C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRTVApp.xcdatamodel; sourceTree = "<group>"; };
+		4C63E9E41E145BAF00A8C05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C63E9E71E145BAF00A8C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C63E9E91E145BAF00A8C05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992DF86A9F8971CD2E632D52 /* Pods_DRTVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRTVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA47FB38785AC1C8E5E232F9 /* Pods-DRTVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRTVApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRTVApp/Pods-DRTVApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C63E9D41E145BAF00A8C05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E6C4E0654EB7D9DA98C8C2 /* Pods_DRTVApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C44E8611E14F6C2006237F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C63E9DC1E145BAF00A8C05E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4C44E8621E14F6C8006237F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C04C9781E1593220009A2E2 /* ProgramCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4C44E8631E14F6CC006237F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C44E8651E14F77B006237F3 /* Program.swift */,
+				4C07780A1E156DB900F8265B /* ProgramCard.swift */,
+				4C07780C1E15834600F8265B /* MostViewedEntity.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4C44E8641E14F6CF006237F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C44E8671E14F8E9006237F3 /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4C63E9CE1E145BAF00A8C05E = {
+			isa = PBXGroup;
+			children = (
+				4C63E9D91E145BAF00A8C05E /* DRTVApp */,
+				4C63E9D81E145BAF00A8C05E /* Products */,
+				9E61043F3769F0F5C8DAD65A /* Pods */,
+				EA4F80C04A356F9FD08D17D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C63E9D81E145BAF00A8C05E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C63E9D71E145BAF00A8C05E /* DRTVApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C63E9D91E145BAF00A8C05E /* DRTVApp */ = {
+			isa = PBXGroup;
+			children = (
+				4C44E8631E14F6CC006237F3 /* Model */,
+				4C44E8621E14F6C8006237F3 /* View */,
+				4C44E8611E14F6C2006237F3 /* Controller */,
+				4C44E8641E14F6CF006237F3 /* Utils */,
+				4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */,
+				4C63E9DE1E145BAF00A8C05E /* Main.storyboard */,
+				4C63E9E41E145BAF00A8C05E /* Assets.xcassets */,
+				4C63E9E61E145BAF00A8C05E /* LaunchScreen.storyboard */,
+				4C63E9E91E145BAF00A8C05E /* Info.plist */,
+				4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */,
+			);
+			path = DRTVApp;
+			sourceTree = "<group>";
+		};
+		9E61043F3769F0F5C8DAD65A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				278AFF6D1D1A7C22646C3010 /* Pods-DRTVApp.debug.xcconfig */,
+				FA47FB38785AC1C8E5E232F9 /* Pods-DRTVApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA4F80C04A356F9FD08D17D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				992DF86A9F8971CD2E632D52 /* Pods_DRTVApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C63E9D61E145BAF00A8C05E /* DRTVApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C63E9EC1E145BAF00A8C05E /* Build configuration list for PBXNativeTarget "DRTVApp" */;
+			buildPhases = (
+				2DDD39F8AA180EDCD268EF88 /* [CP] Check Pods Manifest.lock */,
+				4C63E9D31E145BAF00A8C05E /* Sources */,
+				4C63E9D41E145BAF00A8C05E /* Frameworks */,
+				4C63E9D51E145BAF00A8C05E /* Resources */,
+				6BE37FABBA8DE391E378043E /* [CP] Embed Pods Frameworks */,
+				7E12C06EE059B5AEB91CE983 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DRTVApp;
+			productName = DRTVApp;
+			productReference = 4C63E9D71E145BAF00A8C05E /* DRTVApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C63E9CF1E145BAF00A8C05E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Michael;
+				TargetAttributes = {
+					4C63E9D61E145BAF00A8C05E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4C63E9D21E145BAF00A8C05E /* Build configuration list for PBXProject "DRTVApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C63E9CE1E145BAF00A8C05E;
+			productRefGroup = 4C63E9D81E145BAF00A8C05E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C63E9D61E145BAF00A8C05E /* DRTVApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C63E9D51E145BAF00A8C05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C63E9E81E145BAF00A8C05E /* LaunchScreen.storyboard in Resources */,
+				4C63E9E51E145BAF00A8C05E /* Assets.xcassets in Resources */,
+				4C63E9E01E145BAF00A8C05E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DDD39F8AA180EDCD268EF88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE37FABBA8DE391E378043E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRTVApp/Pods-DRTVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E12C06EE059B5AEB91CE983 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRTVApp/Pods-DRTVApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C63E9D31E145BAF00A8C05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C07780B1E156DB900F8265B /* ProgramCard.swift in Sources */,
+				4C44E8681E14F8E9006237F3 /* Constants.swift in Sources */,
+				4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */,
+				4C44E8661E14F77B006237F3 /* Program.swift in Sources */,
+				4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */,
+				4C63E9E31E145BAF00A8C05E /* DRTVApp.xcdatamodeld in Sources */,
+				4C63E9DD1E145BAF00A8C05E /* ViewController.swift in Sources */,
+				4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C63E9DE1E145BAF00A8C05E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C63E9DF1E145BAF00A8C05E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C63E9E61E145BAF00A8C05E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C63E9E71E145BAF00A8C05E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C63E9EA1E145BAF00A8C05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C63E9EB1E145BAF00A8C05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C63E9ED1E145BAF00A8C05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278AFF6D1D1A7C22646C3010 /* Pods-DRTVApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DRTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ongobongo.DRTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C63E9EE1E145BAF00A8C05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA47FB38785AC1C8E5E232F9 /* Pods-DRTVApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DRTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ongobongo.DRTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C63E9D21E145BAF00A8C05E /* Build configuration list for PBXProject "DRTVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C63E9EA1E145BAF00A8C05E /* Debug */,
+				4C63E9EB1E145BAF00A8C05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C63E9EC1E145BAF00A8C05E /* Build configuration list for PBXNativeTarget "DRTVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C63E9ED1E145BAF00A8C05E /* Debug */,
+				4C63E9EE1E145BAF00A8C05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */,
+			);
+			currentVersion = 4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */;
+			path = DRTVApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C63E9CF1E145BAF00A8C05E /* Project object */;
+}
