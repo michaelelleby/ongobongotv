@@ -41,6 +41,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return _programCards.count
     }
@@ -51,7 +53,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let programCard = self._programCards[indexPath.row]
-        Alamofire.request(programCard.videoURL!).validate().responseObject { (response: DataResponse<Manifest>) in
+        Alamofire.request(programCard.videoURL).validate().responseObject { (response: DataResponse<Manifest>) in
             switch response.result {
             case .success(let value):
                 if let link = value.links?.first(where: {$0.target == ManifestTarget.HLS})?.uri {
@@ -61,6 +63,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     self.present(controller, animated: true, completion: {
                         controller.player!.play()
                     })
+                } else {
+                    print("No HLS link found in manifest \(programCard.videoURL)")
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -73,8 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let programCard = self._programCards[indexPath.row]
             cell.cellTitle.text = programCard.title
             
-            let imageURL = "\(programCard.imageURL!)?width=150"
-            Alamofire.request(imageURL).responseImage { response in
+            Alamofire.request(programCard.imageURL).responseImage { response in
                 switch response.result {
                 case .success(let value):
                     cell.cellImage.image = value
@@ -105,18 +108,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         GCKCastContext.sharedInstance().sessionManager.currentCastSession?.remoteMediaClient?.loadMedia(mediaInfo, autoplay: true)
     }
     func getMostViewed(complete: @escaping ([ProgramCard]?, Error?) -> ()) {
-        let url = "https://www.dr.dk/mu/ProgramViews/MostViewed?from=2016-12-27&span=7%3A00%3A00%3A00"
+        let url = "https://www.dr.dk/mu-online/api/1.3/list/view/selectedlist"
         
-        Alamofire.request(url).responseArray(keyPath: "Data") { (response: DataResponse<[MostViewedEntity]>) in
+        Alamofire.request(url).responseArray(keyPath: "Items") { (response: DataResponse<[ProgramCard]>) in
             switch response.result {
             case .success(let value):
-                var programCards = [ProgramCard]()
+                self._programCards.append(contentsOf: value)
                 
-                for entity in value {
-                    programCards.append(entity.programCard!)
-                }
-                
-                complete(programCards, nil)
+                complete(value, nil)
             case .failure(let error):
                 complete(nil, error)
             }

@@ -23,27 +23,38 @@ struct Manifest : Mappable {
 struct ManifestLink : Mappable {
     var uri: URL?
     var encryptedUri: URL?
-    var hardSubtitlesType: String?
-    var format: ManifestFileFormat?
-    var target: ManifestTarget?
+    var hardSubtitlesType: HardSubtitlesType
+    var format: ManifestFileFormat
+    var target: ManifestTarget
     
     init?(map: Map) {
+        hardSubtitlesType = .Unknown
+        format = .Unknown
+        target = .Unknown
     }
     
     mutating func mapping(map: Map) {
         uri <- (map["Uri"], URLTransform(shouldEncodeURLString: true))
         encryptedUri <- (map["EncryptedUri"], URLTransform(shouldEncodeURLString: true))
-        hardSubtitlesType <- map["HardSubtitlesType"]
+        hardSubtitlesType <- (map["HardSubtitlesType"],EnumTransform<HardSubtitlesType>())
         format <- (map["FileFormat"],EnumTransform<ManifestFileFormat>())
         target <- (map["Target"],EnumTransform<ManifestTarget>())
     }
 }
 
 enum ManifestFileFormat : String {
+    case Unknown
     case MP4 = "mp4"
 }
 
 enum ManifestTarget : String {
+    case Unknown = "Unknown"
+    case Download = "Download"
     case HDS = "HDS"
     case HLS = "HLS"
+}
+
+enum HardSubtitlesType : String {
+    case Unknown
+    case ForeignLanguage = "ForeignLanguage"
 }

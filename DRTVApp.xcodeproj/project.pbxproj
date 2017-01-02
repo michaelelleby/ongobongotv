@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04C9781E1593220009A2E2 /* ProgramCell.swift */; };
 		4C07780B1E156DB900F8265B /* ProgramCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780A1E156DB900F8265B /* ProgramCard.swift */; };
-		4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07780C1E15834600F8265B /* MostViewedEntity.swift */; };
 		4C3BBC791E19592D00A826C7 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BBC781E19592D00A826C7 /* Manifest.swift */; };
 		4C44E8661E14F77B006237F3 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8651E14F77B006237F3 /* Program.swift */; };
 		4C44E8681E14F8E9006237F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44E8671E14F8E9006237F3 /* Constants.swift */; };
 		4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */; };
 		4C63E9DD1E145BAF00A8C05E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9DC1E145BAF00A8C05E /* ViewController.swift */; };
 		4C63E9E01E145BAF00A8C05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9DE1E145BAF00A8C05E /* Main.storyboard */; };
-		4C63E9E31E145BAF00A8C05E /* DRTVApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */; };
 		4C63E9E51E145BAF00A8C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9E41E145BAF00A8C05E /* Assets.xcassets */; };
 		4C63E9E81E145BAF00A8C05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63E9E61E145BAF00A8C05E /* LaunchScreen.storyboard */; };
 		F2E6C4E0654EB7D9DA98C8C2 /* Pods_DRTVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992DF86A9F8971CD2E632D52 /* Pods_DRTVApp.framework */; };
@@ -26,7 +24,6 @@
 		278AFF6D1D1A7C22646C3010 /* Pods-DRTVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRTVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRTVApp/Pods-DRTVApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4C04C9781E1593220009A2E2 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
 		4C07780A1E156DB900F8265B /* ProgramCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCard.swift; sourceTree = "<group>"; };
-		4C07780C1E15834600F8265B /* MostViewedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostViewedEntity.swift; sourceTree = "<group>"; };
 		4C3BBC781E19592D00A826C7 /* Manifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
 		4C44E8651E14F77B006237F3 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		4C44E8671E14F8E9006237F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -34,7 +31,6 @@
 		4C63E9DA1E145BAF00A8C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C63E9DC1E145BAF00A8C05E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C63E9DF1E145BAF00A8C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRTVApp.xcdatamodel; sourceTree = "<group>"; };
 		4C63E9E41E145BAF00A8C05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C63E9E71E145BAF00A8C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C63E9E91E145BAF00A8C05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +71,6 @@
 			children = (
 				4C44E8651E14F77B006237F3 /* Program.swift */,
 				4C07780A1E156DB900F8265B /* ProgramCard.swift */,
-				4C07780C1E15834600F8265B /* MostViewedEntity.swift */,
 				4C3BBC781E19592D00A826C7 /* Manifest.swift */,
 			);
 			name = Model;
@@ -119,7 +114,6 @@
 				4C63E9E41E145BAF00A8C05E /* Assets.xcassets */,
 				4C63E9E61E145BAF00A8C05E /* LaunchScreen.storyboard */,
 				4C63E9E91E145BAF00A8C05E /* Info.plist */,
-				4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */,
 			);
 			path = DRTVApp;
 			sourceTree = "<group>";
@@ -266,11 +260,9 @@
 			files = (
 				4C07780B1E156DB900F8265B /* ProgramCard.swift in Sources */,
 				4C44E8681E14F8E9006237F3 /* Constants.swift in Sources */,
-				4C07780D1E15834600F8265B /* MostViewedEntity.swift in Sources */,
 				4C44E8661E14F77B006237F3 /* Program.swift in Sources */,
 				4C04C9791E1593220009A2E2 /* ProgramCell.swift in Sources */,
 				4C3BBC791E19592D00A826C7 /* Manifest.swift in Sources */,
-				4C63E9E31E145BAF00A8C05E /* DRTVApp.xcdatamodeld in Sources */,
 				4C63E9DD1E145BAF00A8C05E /* ViewController.swift in Sources */,
 				4C63E9DB1E145BAF00A8C05E /* AppDelegate.swift in Sources */,
 			);
@@ -400,6 +392,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ongobongo.DRTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DRTV-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -413,6 +407,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ongobongo.DRTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DRTV-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -439,19 +434,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4C63E9E11E145BAF00A8C05E /* DRTVApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */,
-			);
-			currentVersion = 4C63E9E21E145BAF00A8C05E /* DRTVApp.xcdatamodel */;
-			path = DRTVApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4C63E9CF1E145BAF00A8C05E /* Project object */;
 }

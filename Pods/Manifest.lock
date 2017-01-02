@@ -8,6 +8,7 @@ PODS:
   - google-cast-sdk (3.3.0):
     - google-cast-sdk/Core (= 3.3.0)
   - google-cast-sdk/Core (3.3.0)
+  - iCarousel (1.8.3)
   - ObjectMapper (2.2.2)
 
 DEPENDENCIES:
@@ -15,14 +16,16 @@ DEPENDENCIES:
   - AlamofireImage
   - AlamofireObjectMapper (~> 4.0)
   - google-cast-sdk
+  - iCarousel
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
   google-cast-sdk: da1989cbc1b9ff7b50ddb9dae5b1969d95a65a0f
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
 
-PODFILE CHECKSUM: 3f3c4ce18e4d7e1bc3b86ddc81c0ea7a2a537fdf
+PODFILE CHECKSUM: e1a4a0f76e09184f902df7e3da7bd4e0245d31ae
 
 COCOAPODS: 1.1.1
